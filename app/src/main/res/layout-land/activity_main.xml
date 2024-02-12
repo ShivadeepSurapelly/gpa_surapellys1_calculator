@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_gray"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/logo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Logo Image -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"/>
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPA_Surapellys1_Calculator"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Course 1 -->
+    <LinearLayout
+        android:id="@+id/course1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/logo_title"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/label_course1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 1 GPA:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText_course1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_background"/>
+
+    </LinearLayout>
+
+    <!-- Course 2 -->
+    <LinearLayout
+        android:id="@+id/course2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/course1_layout"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/label_course2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 2 GPA:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText_course2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_background"/>
+
+    </LinearLayout>
+
+    <!-- Course 3 -->
+    <LinearLayout
+        android:id="@+id/course3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/course2_layout"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/label_course3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 3 GPA:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText_course3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_background"/>
+
+    </LinearLayout>
+
+    <!-- Course 4 -->
+    <LinearLayout
+        android:id="@+id/course4_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/course3_layout"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/label_course4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 4 GPA:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText_course4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_background"/>
+
+    </LinearLayout>
+
+    <!-- Course 5 -->
+    <LinearLayout
+        android:id="@+id/course5_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/course4_layout"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/label_course5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 5 GPA:"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText_course5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_background"/>
+
+    </LinearLayout>
+
+    <!-- Compute GPA Button -->
+    <Button
+        android:id="@+id/button_compute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course5_layout"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:text="Compute GPA"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"/>
+
+    <!-- GPA Result -->
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_compute"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
